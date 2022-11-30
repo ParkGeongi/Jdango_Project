@@ -6,7 +6,7 @@ class User(models.Model):
     user_id = models.IntegerField(primary_key=True,max_length=30)
     username = models.TextField()
     password = models.TextField()
-    created_at = models.TextField()
+    created_at = models.DateTimeField()
     rank= models.IntegerField()
     point = models.IntegerField()
     class Meta:
