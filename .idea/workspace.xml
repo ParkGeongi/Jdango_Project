@@ -2,10 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="944697fe-059d-4c76-88f7-08f06004ddc3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e0c4b17-c08c-466f-b456-c554f3cfb911.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4e0c4b17-c08c-466f-b456-c554f3cfb911.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/busers/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/busers/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/busers/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/comments/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/comments/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/comments/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/posts/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/posts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/tags/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/tags/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/tags/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/cinemas/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/cinemas/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/cinemas/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/movies/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/movies/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/movies/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/musers/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/musers/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/musers/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/showtimes/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/showtimes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/showtimes/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/theaters/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/theaters/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/theaters/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/theaters_tickets/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/theaters_tickets/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/theaters_tickets/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/carts/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/carts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/carts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/categories/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/categories/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/categories/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/deliveries/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/deliveries/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/deliveries/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/orders/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/orders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/orders/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/products/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/products/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/susers/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/susers/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/susers/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
     </list>
@@ -130,7 +166,7 @@
       <workItem from="1669711804964" duration="1520000" />
       <workItem from="1669769141586" duration="710000" />
       <workItem from="1669770225953" duration="5195000" />
-      <workItem from="1669775496483" duration="37000" />
+      <workItem from="1669775496483" duration="6819000" />
     </task>
     <servers />
   </component>

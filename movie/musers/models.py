@@ -1,16 +1,16 @@
 from django.db import models
 
 # Create your models here.
-class movie_user(models.Model):
+class Msser(models.Model):
     use_in_migration = True
-    user_id = models.AutoField(primary_key=True)
+    movie_userid = models.AutoField(primary_key=True)
     email = models.TextField()
     nickname = models.TextField()
     password = models.TextField()
-    age = models.IntegerField()
+    age = models.TextField()
 
     class Meta:
         db_table = 'movie_users'
     def __str__(self):
-        return f'{self.user_id} {self.email} {self.nickname} {self.password} {self.age}'
+        return f'{self.pk} {self.email} {self.nickname} {self.password} {self.age}'
 

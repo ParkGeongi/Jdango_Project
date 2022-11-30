@@ -13,4 +13,4 @@ class Delivery(models.Model):
         db_table = 'shop_deliveries'
 
     def __str__(self):
-        return f'{self.delivery_id} {self.username} {self.address} {self.detailed_address} {self.phone}'
+        return f'{self.pk} {self.username} {self.address} {self.detailed_address} {self.phone}'

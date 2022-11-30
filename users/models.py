@@ -8,7 +8,7 @@ class User(models.Model):
     password = models.TextField()
     created_at = models.DateTimeField()
     rank= models.IntegerField()
-    point = models.IntegerField()
+    point = models.TextField()
     class Meta:
             db_table = 'users'
 

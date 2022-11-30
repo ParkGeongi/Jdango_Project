@@ -4,11 +4,11 @@ from django.db import models
 class Order(models.Model):
     use_in_migration = True
     order_id = models.AutoField(primary_key=True)
-    ocreated_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True)
 
 
     class Meta:
         db_table = 'shop_orders'
 
     def __str__(self):
-        return f'{self.order_id} {self.ocreated_at}'
+        return f'{self.pk} {self.created_at}'

@@ -12,4 +12,4 @@ class Post(models.Model):
     class Meta:
         db_table = 'blog_posts'
     def __str__(self):
-        return f'{self.post_id} {self.title} {self.content} {self.created_at} {self.updated_at}'
+        return f'{self.pk} {self.title} {self.content} {self.created_at} {self.updated_at}'

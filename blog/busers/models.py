@@ -6,7 +6,7 @@ from django.db import models
 # Create your models here.
 class Buser(models.Model):
     use_in_migration = True
-    user_id = models.AutoField(primary_key=True)
+    blog_userid = models.AutoField(primary_key=True)
     email = models.TextField()
     nickname = models.TextField()
     password = models.TextField()
@@ -15,4 +15,4 @@ class Buser(models.Model):
     class Meta:
         db_table = 'blog_busers'
     def __str__(self):
-        return f'{self.user_id} {self.email} {self.nickname} {self.password}'
+        return f'{self.pk} {self.email} {self.nickname} {self.password}'

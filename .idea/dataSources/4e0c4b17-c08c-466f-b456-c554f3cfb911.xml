@@ -825,23 +825,23 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>latin1_swedish_ci</CollationName>
     </table>
-    <table id="239" parent="225" name="busers">
+    <table id="239" parent="225" name="blog_busers">
       <Engine>InnoDB</Engine>
       <CollationName>latin1_swedish_ci</CollationName>
     </table>
-    <table id="240" parent="225" name="carts">
+    <table id="240" parent="225" name="blog_comments">
       <Engine>InnoDB</Engine>
       <CollationName>latin1_swedish_ci</CollationName>
     </table>
-    <table id="241" parent="225" name="categories">
+    <table id="241" parent="225" name="blog_posts">
       <Engine>InnoDB</Engine>
       <CollationName>latin1_swedish_ci</CollationName>
     </table>
-    <table id="242" parent="225" name="comments">
+    <table id="242" parent="225" name="blog_tags">
       <Engine>InnoDB</Engine>
       <CollationName>latin1_swedish_ci</CollationName>
     </table>
-    <table id="243" parent="225" name="deliveries">
+    <table id="243" parent="225" name="blog_views">
       <Engine>InnoDB</Engine>
       <CollationName>latin1_swedish_ci</CollationName>
     </table>
@@ -889,852 +889,855 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>latin1_swedish_ci</CollationName>
     </table>
-    <table id="255" parent="225" name="orders">
+    <table id="255" parent="225" name="shop_carts">
       <Engine>InnoDB</Engine>
       <CollationName>latin1_swedish_ci</CollationName>
     </table>
-    <table id="256" parent="225" name="posts">
+    <table id="256" parent="225" name="shop_categories">
       <Engine>InnoDB</Engine>
       <CollationName>latin1_swedish_ci</CollationName>
     </table>
-    <table id="257" parent="225" name="products">
+    <table id="257" parent="225" name="shop_deliveries">
       <Engine>InnoDB</Engine>
       <CollationName>latin1_swedish_ci</CollationName>
     </table>
-    <table id="258" parent="225" name="susers">
+    <table id="258" parent="225" name="shop_orders">
       <Engine>InnoDB</Engine>
       <CollationName>latin1_swedish_ci</CollationName>
     </table>
-    <table id="259" parent="225" name="tags">
+    <table id="259" parent="225" name="shop_products">
       <Engine>InnoDB</Engine>
       <CollationName>latin1_swedish_ci</CollationName>
     </table>
-    <table id="260" parent="225" name="users">
+    <table id="260" parent="225" name="shop_users">
       <Engine>InnoDB</Engine>
       <CollationName>latin1_swedish_ci</CollationName>
     </table>
-    <table id="261" parent="225" name="views">
-      <Engine>InnoDB</Engine>
-      <CollationName>latin1_swedish_ci</CollationName>
-    </table>
-    <column id="262" parent="233" name="id">
+    <column id="261" parent="233" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="263" parent="233" name="name">
+    <column id="262" parent="233" name="name">
       <DataType>varchar(150)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="264" parent="233" name="PRIMARY">
+    <index id="263" parent="233" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="265" parent="233" name="name">
+    <index id="264" parent="233" name="name">
       <ColNames>name</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="266" parent="233" name="PRIMARY">
+    <key id="265" parent="233" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="267" parent="233" name="name">
+    <key id="266" parent="233" name="name">
       <UnderlyingIndexName>name</UnderlyingIndexName>
     </key>
-    <column id="268" parent="234" name="id">
+    <column id="267" parent="234" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="269" parent="234" name="group_id">
+    <column id="268" parent="234" name="group_id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="270" parent="234" name="permission_id">
+    <column id="269" parent="234" name="permission_id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="271" parent="234" name="auth_group_permissions_group_id_b120cbf9_fk_auth_group_id">
+    <foreign-key id="270" parent="234" name="auth_group_permissions_group_id_b120cbf9_fk_auth_group_id">
       <ColNames>group_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_group</RefTableName>
     </foreign-key>
-    <foreign-key id="272" parent="234" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
+    <foreign-key id="271" parent="234" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
       <ColNames>permission_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_permission</RefTableName>
     </foreign-key>
-    <index id="273" parent="234" name="PRIMARY">
+    <index id="272" parent="234" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="274" parent="234" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
+    <index id="273" parent="234" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
       <ColNames>group_id
 permission_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="275" parent="234" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
+    <index id="274" parent="234" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
       <ColNames>permission_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="276" parent="234" name="PRIMARY">
+    <key id="275" parent="234" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="277" parent="234" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
+    <key id="276" parent="234" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
       <UnderlyingIndexName>auth_group_permissions_group_id_permission_id_0cd325b0_uniq</UnderlyingIndexName>
     </key>
-    <column id="278" parent="235" name="id">
-      <AutoIncrement>105</AutoIncrement>
+    <column id="277" parent="235" name="id">
+      <AutoIncrement>117</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="279" parent="235" name="name">
+    <column id="278" parent="235" name="name">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="280" parent="235" name="content_type_id">
+    <column id="279" parent="235" name="content_type_id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="281" parent="235" name="codename">
+    <column id="280" parent="235" name="codename">
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="282" parent="235" name="auth_permission_content_type_id_2f476e4b_fk_django_co">
+    <foreign-key id="281" parent="235" name="auth_permission_content_type_id_2f476e4b_fk_django_co">
       <ColNames>content_type_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>django_content_type</RefTableName>
     </foreign-key>
-    <index id="283" parent="235" name="PRIMARY">
+    <index id="282" parent="235" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="284" parent="235" name="auth_permission_content_type_id_codename_01ab375a_uniq">
+    <index id="283" parent="235" name="auth_permission_content_type_id_codename_01ab375a_uniq">
       <ColNames>content_type_id
 codename</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="285" parent="235" name="PRIMARY">
+    <key id="284" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="286" parent="235" name="auth_permission_content_type_id_codename_01ab375a_uniq">
+    <key id="285" parent="235" name="auth_permission_content_type_id_codename_01ab375a_uniq">
       <UnderlyingIndexName>auth_permission_content_type_id_codename_01ab375a_uniq</UnderlyingIndexName>
     </key>
-    <column id="287" parent="236" name="id">
+    <column id="286" parent="236" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="288" parent="236" name="password">
+    <column id="287" parent="236" name="password">
       <DataType>varchar(128)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="289" parent="236" name="last_login">
+    <column id="288" parent="236" name="last_login">
       <DataType>datetime(6)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="290" parent="236" name="is_superuser">
+    <column id="289" parent="236" name="is_superuser">
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="291" parent="236" name="username">
+    <column id="290" parent="236" name="username">
       <DataType>varchar(150)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="292" parent="236" name="first_name">
+    <column id="291" parent="236" name="first_name">
       <DataType>varchar(150)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="293" parent="236" name="last_name">
+    <column id="292" parent="236" name="last_name">
       <DataType>varchar(150)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="294" parent="236" name="email">
+    <column id="293" parent="236" name="email">
       <DataType>varchar(254)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <column id="295" parent="236" name="is_staff">
+    <column id="294" parent="236" name="is_staff">
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>9</Position>
     </column>
-    <column id="296" parent="236" name="is_active">
+    <column id="295" parent="236" name="is_active">
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>10</Position>
     </column>
-    <column id="297" parent="236" name="date_joined">
+    <column id="296" parent="236" name="date_joined">
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>11</Position>
     </column>
-    <index id="298" parent="236" name="PRIMARY">
+    <index id="297" parent="236" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="299" parent="236" name="username">
+    <index id="298" parent="236" name="username">
       <ColNames>username</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="300" parent="236" name="PRIMARY">
+    <key id="299" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="301" parent="236" name="username">
+    <key id="300" parent="236" name="username">
       <UnderlyingIndexName>username</UnderlyingIndexName>
     </key>
-    <column id="302" parent="237" name="id">
+    <column id="301" parent="237" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="303" parent="237" name="user_id">
+    <column id="302" parent="237" name="user_id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="304" parent="237" name="group_id">
+    <column id="303" parent="237" name="group_id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="305" parent="237" name="auth_user_groups_user_id_6a12ed8b_fk_auth_user_id">
+    <foreign-key id="304" parent="237" name="auth_user_groups_user_id_6a12ed8b_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_user</RefTableName>
     </foreign-key>
-    <foreign-key id="306" parent="237" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
+    <foreign-key id="305" parent="237" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
       <ColNames>group_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_group</RefTableName>
     </foreign-key>
-    <index id="307" parent="237" name="PRIMARY">
+    <index id="306" parent="237" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="308" parent="237" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
+    <index id="307" parent="237" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
       <ColNames>user_id
 group_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="309" parent="237" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
+    <index id="308" parent="237" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
       <ColNames>group_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="310" parent="237" name="PRIMARY">
+    <key id="309" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="311" parent="237" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
+    <key id="310" parent="237" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
       <UnderlyingIndexName>auth_user_groups_user_id_group_id_94350c0c_uniq</UnderlyingIndexName>
     </key>
-    <column id="312" parent="238" name="id">
+    <column id="311" parent="238" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="313" parent="238" name="user_id">
+    <column id="312" parent="238" name="user_id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="314" parent="238" name="permission_id">
+    <column id="313" parent="238" name="permission_id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="315" parent="238" name="auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id">
+    <foreign-key id="314" parent="238" name="auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_user</RefTableName>
     </foreign-key>
-    <foreign-key id="316" parent="238" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
+    <foreign-key id="315" parent="238" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
       <ColNames>permission_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_permission</RefTableName>
     </foreign-key>
-    <index id="317" parent="238" name="PRIMARY">
+    <index id="316" parent="238" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="318" parent="238" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
+    <index id="317" parent="238" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
       <ColNames>user_id
 permission_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="319" parent="238" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
+    <index id="318" parent="238" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
       <ColNames>permission_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="320" parent="238" name="PRIMARY">
+    <key id="319" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="321" parent="238" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
+    <key id="320" parent="238" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
       <UnderlyingIndexName>auth_user_user_permissions_user_id_permission_id_14a6b632_uniq</UnderlyingIndexName>
     </key>
-    <column id="322" parent="239" name="user_id">
+    <column id="321" parent="239" name="blog_userid">
       <AutoIncrement>1</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="323" parent="239" name="email">
+    <column id="322" parent="239" name="email">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="324" parent="239" name="nickname">
+    <column id="323" parent="239" name="nickname">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="325" parent="239" name="password">
+    <column id="324" parent="239" name="password">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="326" parent="239" name="PRIMARY">
-      <ColNames>user_id</ColNames>
+    <index id="325" parent="239" name="PRIMARY">
+      <ColNames>blog_userid</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="327" parent="239" name="PRIMARY">
+    <key id="326" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="328" parent="240" name="cart_id">
+    <column id="327" parent="240" name="comment_id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <index id="329" parent="240" name="PRIMARY">
-      <ColNames>cart_id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="330" parent="240" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="331" parent="241" name="category_id">
-      <AutoIncrement>1</AutoIncrement>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="332" parent="241" name="cname">
+    <column id="328" parent="240" name="content">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="333" parent="241" name="PRIMARY">
-      <ColNames>category_id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="334" parent="241" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="335" parent="242" name="comment_id">
-      <AutoIncrement>1</AutoIncrement>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="336" parent="242" name="ccontent">
-      <DataType>longtext|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="337" parent="242" name="ccreated_at">
+    <column id="329" parent="240" name="created_at">
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="338" parent="242" name="cupdated_at">
+    <column id="330" parent="240" name="updated_at">
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="339" parent="242" name="PRIMARY">
+    <index id="331" parent="240" name="PRIMARY">
       <ColNames>comment_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="340" parent="242" name="PRIMARY">
+    <key id="332" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="341" parent="243" name="delivery_id">
+    <column id="333" parent="241" name="post_id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="342" parent="243" name="username">
+    <column id="334" parent="241" name="title">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="343" parent="243" name="address">
+    <column id="335" parent="241" name="content">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="344" parent="243" name="detailed_address">
-      <DataType>longtext|0s</DataType>
+    <column id="336" parent="241" name="created_at">
+      <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="345" parent="243" name="phone">
-      <DataType>longtext|0s</DataType>
+    <column id="337" parent="241" name="updated_at">
+      <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <index id="346" parent="243" name="PRIMARY">
-      <ColNames>delivery_id</ColNames>
+    <index id="338" parent="241" name="PRIMARY">
+      <ColNames>post_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="347" parent="243" name="PRIMARY">
+    <key id="339" parent="241" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="348" parent="244" name="id">
+    <column id="340" parent="242" name="tag_id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="349" parent="244" name="action_time">
+    <column id="341" parent="242" name="title">
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <index id="342" parent="242" name="PRIMARY">
+      <ColNames>tag_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="343" parent="242" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="344" parent="243" name="view_id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="345" parent="243" name="ip_address">
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="346" parent="243" name="created_at">
+      <DataType>datetime(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="347" parent="243" name="PRIMARY">
+      <ColNames>view_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="348" parent="243" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="349" parent="244" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="350" parent="244" name="action_time">
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="350" parent="244" name="object_id">
+    <column id="351" parent="244" name="object_id">
       <DataType>longtext|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="351" parent="244" name="object_repr">
+    <column id="352" parent="244" name="object_repr">
       <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="352" parent="244" name="action_flag">
+    <column id="353" parent="244" name="action_flag">
       <DataType>smallint(5) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="353" parent="244" name="change_message">
+    <column id="354" parent="244" name="change_message">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="354" parent="244" name="content_type_id">
+    <column id="355" parent="244" name="content_type_id">
       <DataType>int(11)|0s</DataType>
       <Position>7</Position>
     </column>
-    <column id="355" parent="244" name="user_id">
+    <column id="356" parent="244" name="user_id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <foreign-key id="356" parent="244" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
+    <foreign-key id="357" parent="244" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
       <ColNames>content_type_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>django_content_type</RefTableName>
     </foreign-key>
-    <foreign-key id="357" parent="244" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
+    <foreign-key id="358" parent="244" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_user</RefTableName>
     </foreign-key>
-    <index id="358" parent="244" name="PRIMARY">
+    <index id="359" parent="244" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="359" parent="244" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
+    <index id="360" parent="244" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
       <ColNames>content_type_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="360" parent="244" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
+    <index id="361" parent="244" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="361" parent="244" name="PRIMARY">
+    <key id="362" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="362" parent="245" name="id">
-      <AutoIncrement>27</AutoIncrement>
+    <column id="363" parent="245" name="id">
+      <AutoIncrement>30</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="363" parent="245" name="app_label">
+    <column id="364" parent="245" name="app_label">
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="364" parent="245" name="model">
+    <column id="365" parent="245" name="model">
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="365" parent="245" name="PRIMARY">
+    <index id="366" parent="245" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="366" parent="245" name="django_content_type_app_label_model_76bd3d3b_uniq">
+    <index id="367" parent="245" name="django_content_type_app_label_model_76bd3d3b_uniq">
       <ColNames>app_label
 model</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="367" parent="245" name="PRIMARY">
+    <key id="368" parent="245" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="368" parent="245" name="django_content_type_app_label_model_76bd3d3b_uniq">
+    <key id="369" parent="245" name="django_content_type_app_label_model_76bd3d3b_uniq">
       <UnderlyingIndexName>django_content_type_app_label_model_76bd3d3b_uniq</UnderlyingIndexName>
     </key>
-    <column id="369" parent="246" name="id">
-      <AutoIncrement>39</AutoIncrement>
+    <column id="370" parent="246" name="id">
+      <AutoIncrement>58</AutoIncrement>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="370" parent="246" name="app">
+    <column id="371" parent="246" name="app">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="371" parent="246" name="name">
+    <column id="372" parent="246" name="name">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="372" parent="246" name="applied">
+    <column id="373" parent="246" name="applied">
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="373" parent="246" name="PRIMARY">
+    <index id="374" parent="246" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="374" parent="246" name="PRIMARY">
+    <key id="375" parent="246" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="375" parent="247" name="session_key">
+    <column id="376" parent="247" name="session_key">
       <DataType>varchar(40)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="376" parent="247" name="session_data">
+    <column id="377" parent="247" name="session_data">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="377" parent="247" name="expire_date">
+    <column id="378" parent="247" name="expire_date">
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="378" parent="247" name="PRIMARY">
+    <index id="379" parent="247" name="PRIMARY">
       <ColNames>session_key</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="379" parent="247" name="django_session_expire_date_a5c62663">
+    <index id="380" parent="247" name="django_session_expire_date_a5c62663">
       <ColNames>expire_date</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="380" parent="247" name="PRIMARY">
+    <key id="381" parent="247" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="381" parent="248" name="hello">
+    <column id="382" parent="248" name="hello">
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="382" parent="248" name="name">
+    <column id="383" parent="248" name="name">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="383" parent="248" name="PRIMARY">
+    <index id="384" parent="248" name="PRIMARY">
       <ColNames>hello</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="384" parent="248" name="PRIMARY">
+    <key id="385" parent="248" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="385" parent="249" name="cinema_id">
+    <column id="386" parent="249" name="cinema_id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="386" parent="249" name="ctitle">
+    <column id="387" parent="249" name="title">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="387" parent="249" name="image_url">
+    <column id="388" parent="249" name="image_url">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="388" parent="249" name="address">
+    <column id="389" parent="249" name="address">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="389" parent="249" name="detail_address">
+    <column id="390" parent="249" name="detail_address">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <index id="390" parent="249" name="PRIMARY">
+    <index id="391" parent="249" name="PRIMARY">
       <ColNames>cinema_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="391" parent="249" name="PRIMARY">
+    <key id="392" parent="249" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="392" parent="250" name="movie_id">
+    <column id="393" parent="250" name="movie_id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="393" parent="250" name="title">
+    <column id="394" parent="250" name="title">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="394" parent="250" name="director">
+    <column id="395" parent="250" name="director">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="395" parent="250" name="description">
+    <column id="396" parent="250" name="description">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="396" parent="250" name="poster_url">
+    <column id="397" parent="250" name="poster_url">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="397" parent="250" name="running_time">
-      <DataType>int(11)|0s</DataType>
+    <column id="398" parent="250" name="running_time">
+      <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="398" parent="250" name="age_rating">
-      <DataType>int(11)|0s</DataType>
+    <column id="399" parent="250" name="age_rating">
+      <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <index id="399" parent="250" name="PRIMARY">
+    <index id="400" parent="250" name="PRIMARY">
       <ColNames>movie_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="400" parent="250" name="PRIMARY">
+    <key id="401" parent="250" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="401" parent="251" name="showtime_id">
+    <column id="402" parent="251" name="showtime_id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="402" parent="251" name="start_time">
+    <column id="403" parent="251" name="start_time">
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="403" parent="251" name="end_time">
+    <column id="404" parent="251" name="end_time">
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="404" parent="251" name="PRIMARY">
+    <index id="405" parent="251" name="PRIMARY">
       <ColNames>showtime_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="405" parent="251" name="PRIMARY">
+    <key id="406" parent="251" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="406" parent="252" name="theater_ticket_id">
+    <column id="407" parent="252" name="theater_ticket_id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="407" parent="252" name="x">
+    <column id="408" parent="252" name="x">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="408" parent="252" name="y">
+    <column id="409" parent="252" name="y">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="409" parent="252" name="PRIMARY">
+    <index id="410" parent="252" name="PRIMARY">
       <ColNames>theater_ticket_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="410" parent="252" name="PRIMARY">
+    <key id="411" parent="252" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="411" parent="253" name="theater_id">
+    <column id="412" parent="253" name="theater_id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="412" parent="253" name="title">
+    <column id="413" parent="253" name="title">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="413" parent="253" name="seat">
-      <DataType>int(11)|0s</DataType>
+    <column id="414" parent="253" name="seat">
+      <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="414" parent="253" name="PRIMARY">
+    <index id="415" parent="253" name="PRIMARY">
       <ColNames>theater_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="415" parent="253" name="PRIMARY">
+    <key id="416" parent="253" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="416" parent="254" name="user_id">
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="417" parent="254" name="email">
-      <DataType>longtext|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="418" parent="254" name="nickname">
-      <DataType>longtext|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="419" parent="254" name="password">
-      <DataType>longtext|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <column id="420" parent="254" name="age">
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-    </column>
-    <index id="421" parent="254" name="PRIMARY">
-      <ColNames>user_id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="422" parent="254" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="423" parent="255" name="order_id">
+    <column id="417" parent="254" name="movie_userid">
       <AutoIncrement>1</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="424" parent="255" name="ocreated_at">
-      <DataType>datetime(6)|0s</DataType>
+    <column id="418" parent="254" name="email">
+      <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
+    <column id="419" parent="254" name="nickname">
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="420" parent="254" name="password">
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="421" parent="254" name="age">
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <index id="422" parent="254" name="PRIMARY">
+      <ColNames>movie_userid</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="423" parent="254" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="424" parent="255" name="cart_id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
     <index id="425" parent="255" name="PRIMARY">
-      <ColNames>order_id</ColNames>
+      <ColNames>cart_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
@@ -1743,192 +1746,147 @@ model</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="427" parent="256" name="post_id">
+    <column id="427" parent="256" name="category_id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="428" parent="256" name="title">
+    <column id="428" parent="256" name="name">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="429" parent="256" name="content">
-      <DataType>longtext|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="430" parent="256" name="created_at">
-      <DataType>datetime(6)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <column id="431" parent="256" name="updated_at">
-      <DataType>datetime(6)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-    </column>
-    <index id="432" parent="256" name="PRIMARY">
-      <ColNames>post_id</ColNames>
+    <index id="429" parent="256" name="PRIMARY">
+      <ColNames>category_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="433" parent="256" name="PRIMARY">
+    <key id="430" parent="256" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="434" parent="257" name="product_id">
+    <column id="431" parent="257" name="delivery_id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="435" parent="257" name="pname">
+    <column id="432" parent="257" name="username">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="436" parent="257" name="price">
-      <DataType>int(11)|0s</DataType>
+    <column id="433" parent="257" name="address">
+      <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="437" parent="257" name="image_url">
+    <column id="434" parent="257" name="detailed_address">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="438" parent="257" name="PRIMARY">
+    <column id="435" parent="257" name="phone">
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <index id="436" parent="257" name="PRIMARY">
+      <ColNames>delivery_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="437" parent="257" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="438" parent="258" name="order_id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="439" parent="258" name="created_at">
+      <DataType>datetime(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <index id="440" parent="258" name="PRIMARY">
+      <ColNames>order_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="441" parent="258" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="442" parent="259" name="product_id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="443" parent="259" name="name">
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="444" parent="259" name="price">
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="445" parent="259" name="image_url">
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="446" parent="259" name="PRIMARY">
       <ColNames>product_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="439" parent="257" name="PRIMARY">
+    <key id="447" parent="259" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="440" parent="258" name="suser_id">
+    <column id="448" parent="260" name="shop_userid">
       <AutoIncrement>1</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="441" parent="258" name="email">
+    <column id="449" parent="260" name="email">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="442" parent="258" name="nickname">
+    <column id="450" parent="260" name="nickname">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="443" parent="258" name="password">
+    <column id="451" parent="260" name="password">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="444" parent="258" name="point">
+    <column id="452" parent="260" name="point">
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <index id="445" parent="258" name="PRIMARY">
-      <ColNames>suser_id</ColNames>
+    <index id="453" parent="260" name="PRIMARY">
+      <ColNames>shop_userid</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="446" parent="258" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="447" parent="259" name="tag_id">
-      <AutoIncrement>1</AutoIncrement>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="448" parent="259" name="ttitle">
-      <DataType>longtext|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <index id="449" parent="259" name="PRIMARY">
-      <ColNames>tag_id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="450" parent="259" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="451" parent="260" name="user_id">
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="452" parent="260" name="username">
-      <DataType>longtext|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="453" parent="260" name="password">
-      <DataType>longtext|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="454" parent="260" name="created_at">
-      <DataType>longtext|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <column id="455" parent="260" name="rank">
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-    </column>
-    <column id="456" parent="260" name="point">
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>6</Position>
-    </column>
-    <index id="457" parent="260" name="PRIMARY">
-      <ColNames>user_id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="458" parent="260" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="459" parent="261" name="view_id">
-      <AutoIncrement>1</AutoIncrement>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="460" parent="261" name="ip_address">
-      <DataType>longtext|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="461" parent="261" name="vcreated_at">
-      <DataType>datetime(6)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <index id="462" parent="261" name="PRIMARY">
-      <ColNames>view_id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="463" parent="261" name="PRIMARY">
+    <key id="454" parent="260" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
