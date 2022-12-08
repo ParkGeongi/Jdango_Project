@@ -3,47 +3,38 @@
   <component name="ChangeListManager">
     <list default="true" id="944697fe-059d-4c76-88f7-08f06004ddc3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e0c4b17-c08c-466f-b456-c554f3cfb911.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4e0c4b17-c08c-466f-b456-c554f3cfb911.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4a8a2cbb-559b-4cf8-a5dc-e57fe626e961.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4a8a2cbb-559b-4cf8-a5dc-e57fe626e961/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4a8a2cbb-559b-4cf8-a5dc-e57fe626e961/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4a8a2cbb-559b-4cf8-a5dc-e57fe626e961/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4a8a2cbb-559b-4cf8-a5dc-e57fe626e961/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e0c4b17-c08c-466f-b456-c554f3cfb911.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e0c4b17-c08c-466f-b456-c554f3cfb911/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e0c4b17-c08c-466f-b456-c554f3cfb911/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e0c4b17-c08c-466f-b456-c554f3cfb911/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e0c4b17-c08c-466f-b456-c554f3cfb911/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5a481bd9-7dc9-4fba-8de8-f06ca3afe9c7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5a481bd9-7dc9-4fba-8de8-f06ca3afe9c7/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5a481bd9-7dc9-4fba-8de8-f06ca3afe9c7/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5a481bd9-7dc9-4fba-8de8-f06ca3afe9c7/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5a481bd9-7dc9-4fba-8de8-f06ca3afe9c7/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7a6b9aec-5dab-423f-b581-7ea751481c73.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7a6b9aec-5dab-423f-b581-7ea751481c73/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7a6b9aec-5dab-423f-b581-7ea751481c73/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7a6b9aec-5dab-423f-b581-7ea751481c73/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7a6b9aec-5dab-423f-b581-7ea751481c73/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7d3b48d-0b9c-404c-9535-5ecbf72444c8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7d3b48d-0b9c-404c-9535-5ecbf72444c8/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7d3b48d-0b9c-404c-9535-5ecbf72444c8/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7d3b48d-0b9c-404c-9535-5ecbf72444c8/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7d3b48d-0b9c-404c-9535-5ecbf72444c8/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7dd52fe-39e2-4e54-bc9b-92eb9657acb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7dd52fe-39e2-4e54-bc9b-92eb9657acb4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/djangoProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djangoProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/busers/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/busers/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/busers/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/comments/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/comments/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/comments/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/posts/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/posts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/tags/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/tags/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/tags/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/cinemas/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/cinemas/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/cinemas/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/movies/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/movies/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/movies/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/musers/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/musers/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/musers/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/showtimes/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/showtimes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/showtimes/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/theaters/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/theaters/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/theaters/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/theaters_tickets/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/theaters_tickets/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/theaters_tickets/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/carts/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/carts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/carts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/categories/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/categories/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/categories/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/deliveries/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/deliveries/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/deliveries/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/orders/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/orders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/orders/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/products/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/products/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/susers/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/susers/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/susers/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/busers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/busers/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +79,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/ProgramData/Anaconda3/python.exe&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -96,7 +88,34 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Django Server.djangoProject">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AIA\PycharmProjects\djangoProject\blog\busers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.service">
+    <configuration name="service" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="djangoProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/shop/products" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shop/products/service.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="djangoProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,6 +163,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.service" />
         <item itemvalue="Python.settings" />
       </list>
     </recent_temporary>
@@ -167,6 +187,18 @@
       <workItem from="1669769141586" duration="710000" />
       <workItem from="1669770225953" duration="5195000" />
       <workItem from="1669775496483" duration="6819000" />
+      <workItem from="1669868487657" duration="1352000" />
+      <workItem from="1669874286018" duration="313000" />
+      <workItem from="1669877046787" duration="411000" />
+      <workItem from="1669878083070" duration="674000" />
+      <workItem from="1669883158156" duration="346000" />
+      <workItem from="1669945702496" duration="1606000" />
+      <workItem from="1670229177266" duration="7000" />
+      <workItem from="1670229235272" duration="611000" />
+      <workItem from="1670231827474" duration="38000" />
+      <workItem from="1670231966785" duration="36000" />
+      <workItem from="1670295246418" duration="1855000" />
+      <workItem from="1670381374717" duration="12639000" />
     </task>
     <servers />
   </component>
@@ -186,5 +218,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/djangoProject$settings.coverage" NAME="settings Coverage Results" MODIFIED="1669703817008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/admin" />
+    <SUITE FILE_PATH="coverage/djangoProject$service.coverage" NAME="service Coverage Results" MODIFIED="1670402398916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shop/products" />
   </component>
 </project>
